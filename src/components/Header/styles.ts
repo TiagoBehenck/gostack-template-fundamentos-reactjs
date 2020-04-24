@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 interface ContainerProps {
   size?: 'small' | 'large';
+  active?: boolean;
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -17,6 +18,16 @@ export const Container = styled.div<ContainerProps>`
     justify-content: space-between;
 
     nav {
+      display: flex;
+
+      a.active::after {
+        content: '';
+        height: 2px;
+        background: #ff872c;
+        display: flex;
+        margin-top: 10px;
+      }
+
       a {
         color: #fff;
         text-decoration: none;

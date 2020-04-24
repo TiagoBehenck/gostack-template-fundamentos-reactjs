@@ -93,3 +93,15 @@ export const TableContainer = styled.section`
     }
   }
 `;
+
+export const NoTransaction = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+  h1 {
+    font-weight: 200;
+  }
+`;
